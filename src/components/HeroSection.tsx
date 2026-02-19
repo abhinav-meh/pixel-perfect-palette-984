@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 import heroStudio from "@/assets/hero-studio.jpg";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 
 const HeroSection = () => {
   return (
@@ -72,13 +79,25 @@ const HeroSection = () => {
         </div>
 
         {/* Navigation */}
-        <nav className="flex gap-6 mt-12 lg:mt-0">
+        <nav className="flex gap-6 mt-12 lg:mt-0 items-center">
           <a href="#work" className="link-underline text-sm font-medium">
             Work
           </a>
           <a href="#about" className="link-underline text-sm font-medium">
             About
           </a>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="link-underline text-sm font-medium flex items-center gap-1 outline-none">
+              Projects <ChevronDown className="h-3 w-3" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start" className="bg-background border border-border">
+              {["Interactive Installations", "Computational Design", "Mathematical Art", "Fabrication & Making", "Exhibit Design"].map((cat) => (
+                <DropdownMenuItem key={cat} className="text-sm cursor-pointer">
+                  {cat}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
         </nav>
       </motion.div>
     </section>
