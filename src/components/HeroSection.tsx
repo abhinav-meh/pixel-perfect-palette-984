@@ -89,9 +89,6 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.7 }}
       >
-        <a href="#work" className="link-underline text-xl md:text-2xl lg:text-3xl tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
-          Work
-        </a>
         <a href="#about" className="link-underline text-xl md:text-2xl lg:text-3xl tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
           About
         </a>
