@@ -67,7 +67,7 @@ export interface Project {
 export const allProjects: Project[] = [
   {
     id: "SR001",
-    title: "Riem",
+    title: "Riem Prototypes",
     category: "Mathematical Art & Design",
     date: "December 2025",
     description:
