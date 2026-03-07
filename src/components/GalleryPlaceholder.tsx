@@ -108,7 +108,7 @@ const Gallery = () => {
                 className="w-full h-full object-cover"
                 style={{
                   ...(images[current].position ? { objectPosition: images[current].position } : {}),
-                  ...(images[current].rotate ? { transform: `rotate(${images[current].rotate}deg)`, minWidth: "140%", minHeight: "140%" } : {}),
+                  ...(images[current].rotate ? { transform: `rotate(${images[current].rotate}deg) scale(1.8)` } : {}),
                 }}
               />
             </motion.div>
