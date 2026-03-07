@@ -84,9 +84,9 @@ export const allProjects: Project[] = [
     category: "Art Fabrication & Integrated Technology",
     date: "September 2025–2026",
     description:
-      "Fabrication and tech integration for Denver artist Sammy Lee's upcoming solo exhibition at the Museum of Contemporary Art.",
+      "Fabrication and tech integration for Denver artist Sammy Lee's 2026 spring exhibition at the Museum of Contemporary Art.",
     fullDescription:
-      "Working as an intern and then assistant, I helped Denver artist Sammy Lee fabricate pieces for her upcoming solo exhibition at the Museum of Contemporary Art (MCA) in Denver. My work included building a giant microphone from scaffolding to finished surface, where we applied paper casting—one of Sammy's signature techniques—to the exterior. For another piece featuring a repurposed airline seat, I helped adorn it in foil tape and disco mirror mosaic, then custom-integrated sensors that allow viewers to interact with the piece and activate special lighting. I also integrated LED lights and buttons into one of Sammy's existing works.\n\nFull images will be added after the exhibition opens in March.",
+      "Working as an intern and then assistant, I helped Denver artist Sammy Lee fabricate pieces for her solo exhibition at the Museum of Contemporary Art (MCA) in Denver. My work included helping build a giant microphone from scaffolding to finished surface, where we applied paper casting—one of Sammy's signature techniques—to the exterior. For another piece featuring a repurposed airline seat, I helped adorn it in foil tape and disco mirror mosaic, then custom-integrated sensors that allow viewers to interact with the piece and activate special lighting. I also integrated LED lights and buttons into one of Sammy's existing works.",
     links: [{ label: "About the exhibition", url: "https://mcadenver.org/exhibitions/sammy-seung-min-lee" }],
     image: project3,
   },
