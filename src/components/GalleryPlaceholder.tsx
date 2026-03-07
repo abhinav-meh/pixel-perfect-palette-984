@@ -103,9 +103,10 @@ const Gallery = () => {
               className="absolute inset-0 w-full h-full"
             >
               <img
-                src={images[current]}
+                src={images[current].src}
                 alt={`Studio & process photo ${current + 1}`}
                 className="w-full h-full object-cover"
+                style={images[current].position ? { objectPosition: images[current].position } : undefined}
               />
             </motion.div>
           </AnimatePresence>
