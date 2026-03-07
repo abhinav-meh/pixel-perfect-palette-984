@@ -34,7 +34,7 @@ const projects = [
     id: "SR003",
     title: "MCA Exhibition Work",
     category: "Art Fabrication & Technology",
-    description: "Assisted Denver artist Sammy Lee fabricating pieces for her MCA solo exhibition—including a giant microphone from scaffolding with paper casting, and sensor-integrated interactive lighting systems.",
+    description: "Fabrication and tech integration for Denver artist Sammy Lee's 2026 spring exhibition at the Museum of Contemporary Art.",
     image: project3,
   },
   {
