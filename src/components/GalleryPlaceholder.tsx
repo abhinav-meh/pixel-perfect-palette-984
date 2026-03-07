@@ -18,13 +18,13 @@ import galleryCardboardPrototype from "@/assets/gallery-cardboard-prototype.png"
 import galleryWeaving from "@/assets/gallery-weaving.png";
 import galleryLeafLamp from "@/assets/gallery-leaf-lamp.png";
 
-const images: { src: string; position?: string }[] = [
+const images: { src: string; position?: string; rotate?: number }[] = [
   { src: galleryWawPainting, position: "center 100%" },       // 1 - show bottom
   { src: galleryLeafLamp, position: "center 70%" },             // 2 - show more bottom
   { src: galleryBeehiveProgress },                              // 3
   { src: galleryImg3572 },                                      // 4
   { src: gallerySammyTopo },                                    // 5
-  { src: galleryCalligraphy },                                  // 6 - rotated
+  { src: galleryCalligraphy, rotate: -90 },                     // 6 - rotated CCW
   { src: galleryRockingCardboard },                             // 7
   { src: galleryImg2632, position: "center 20%" },             // 8 - show top
   { src: galleryShiftVase, position: "center 60%" },           // 9 - show more middle/bottom
@@ -32,7 +32,7 @@ const images: { src: string; position?: string }[] = [
   { src: galleryIsuProgress },                                  // 11
   { src: galleryImg3485 },                                      // 12
   { src: galleryCardboardPrototype, position: "center 60%" },  // 13 - shift down slightly
-  { src: galleryButterflyDrawings },                            // 14 - rotated
+  { src: galleryButterflyDrawings, rotate: -90 },               // 14 - rotated CCW
   { src: galleryImg9495, position: "center 70%" },             // 15 - show more bottom
 ];
 
@@ -106,7 +106,10 @@ const Gallery = () => {
                 src={images[current].src}
                 alt={`Studio & process photo ${current + 1}`}
                 className="w-full h-full object-cover"
-                style={images[current].position ? { objectPosition: images[current].position } : undefined}
+                style={{
+                  ...(images[current].position ? { objectPosition: images[current].position } : {}),
+                  ...(images[current].rotate ? { transform: `rotate(${images[current].rotate}deg) scale(1.4)` } : {}),
+                }}
               />
             </motion.div>
           </AnimatePresence>
