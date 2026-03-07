@@ -108,7 +108,7 @@ const Gallery = () => {
                 className="w-full h-full object-cover"
                 style={{
                   ...(images[current].position ? { objectPosition: images[current].position } : {}),
-                  ...(images[current].rotate ? { transform: `rotate(${images[current].rotate}deg) scale(1.4)` } : {}),
+                  ...(images[current].rotate ? { transform: `rotate(${images[current].rotate}deg) scale(1.15)` } : {}),
                 }}
               />
             </motion.div>
@@ -187,6 +187,7 @@ const Gallery = () => {
               src={images[current].src}
               alt="Expanded view"
               className="max-w-[90vw] max-h-[90vh] object-contain"
+              style={images[current].rotate ? { transform: `rotate(${images[current].rotate}deg)` } : undefined}
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
