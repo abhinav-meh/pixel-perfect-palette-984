@@ -181,7 +181,7 @@ const Gallery = () => {
             </button>
             <motion.img
               key={current}
-              src={images[current]}
+              src={images[current].src}
               alt="Expanded view"
               className="max-w-[90vw] max-h-[90vh] object-contain"
               initial={{ scale: 0.9, opacity: 0 }}
