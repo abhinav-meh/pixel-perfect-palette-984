@@ -25,6 +25,7 @@ import shiftVaseMain from "@/assets/shift-vase-main.jpg";
 import shiftVasePattern1 from "@/assets/shift-vase-pattern1.png";
 import shiftVasePattern2 from "@/assets/shift-vase-pattern2.png";
 import shiftVasePrototype from "@/assets/shift-vase-prototype.png";
+import wawHopiArizona from "@/assets/waw-hopi-arizona.jpg";
 import mcaMicrophone from "@/assets/mca-microphone.jpg";
 import mcaSensorPiece from "@/assets/mca-sensor-piece.jpg";
 import mcaAirlineSeat from "@/assets/mca-airline-seat.jpg";
