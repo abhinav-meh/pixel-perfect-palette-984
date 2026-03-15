@@ -36,7 +36,7 @@ const AboutSection = () => {
           </h3>
           <p className="text-sm text-muted-foreground">
             ATLAS Institute, CU Boulder<br />
-            Creative Technology & Design ME<br />
+            Creative Technology & Design MS<br />
             Mathematics, CSU
           </p>
         </motion.div>
