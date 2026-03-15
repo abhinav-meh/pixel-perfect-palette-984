@@ -49,7 +49,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
         >
           <p className="editorial-text mb-6">
-            I'm graduating from the ATLAS Institute's Creative Technology and Design master's program 
+            I'm graduating from the ATLAS Institute's Creative Technology and Design master's of engineering program 
             at CU Boulder with a background in mathematics from CSU. My work sits at the intersection 
             of computational design, physical fabrication, interactive technology, and STEM education.
           </p>
